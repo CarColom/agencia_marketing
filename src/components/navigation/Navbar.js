@@ -1,5 +1,6 @@
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
+import appCraft from "../../assets/img/AppCraft.png"
 
 function Navbar(){
     return(
@@ -8,7 +9,7 @@ function Navbar(){
       <div className="-ml-4 -mt-2 flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
         <div className="ml-4 mt-2">
           <img 
-          src=""
+          src={appCraft}
           className=""
           />
         </div>
