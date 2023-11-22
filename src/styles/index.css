@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    @apply border-blue-800
+}
+.rec.rec-arrow {
+    background-color: #0B1014;
+    color: #eeeeee;
+    }
+    
+    .rec.rec-arrow:hover {
+    background-color: rgb(59, 57, 63);
+    }
+    
+    .rec.rec-arrow:disabled {
+      visibility: hidden;
+      }
+      
+    .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+    background-color: #eaeaea;
+    }
