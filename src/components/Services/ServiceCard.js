@@ -3,12 +3,12 @@ function ServiceCard({data,index}){
         <div
         onMouseEnter={()=>{
             const title_element = document.getElementById(index)
-            title_element.classList.add('text-orange-500')
+            title_element.classList.add('text-blue-700')
             title_element.classList.remove('text-gray-900')
         }} 
         onMouseLeave={()=>{
             const title_element = document.getElementById(index)
-            title_element.classList.remove('text-orange-500')
+            title_element.classList.remove('text-blue-700')
             title_element.classList.add('text-gray-900')
         }} 
         className="w-full relative p-8 h-96 lg:h-[200pm] bg-white hover:-translate-y-1 transition duration-300 ease-in-out">

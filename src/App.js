@@ -9,10 +9,35 @@ import Careers from "containers/pages/Careers";
 import Blog from "containers/pages/Blog";
 import Contact from "containers/pages/Contact";
 import Cases from "containers/pages/Cases";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function App() {
   return (
+    <HelmetProvider>
+       <Helmet>
+        <title>AppCraft | Software Agency</title>
+        <meta name="description" content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones." />
+        <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
+        <meta name="robots" content='all' />
+        <link rel="canonical" href="https://www.AppCraft.com/" />
+        <meta name="author" content='AppCraft' />
+        <meta name="publisher" content='AppCraft' />
+
+        {/* Social Media Tags */}
+        <meta property="og:title" content='AppCraft | Software Agency' />
+        <meta property="og:description" content='Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones.' />
+        <meta property="og:url" content="https://www.AppCraft.com/" />
+        <meta property="og:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
+
+        <meta name="twitter:title" content='AppCraft | Software Agency' />
+        <meta
+            name="twitter:description"
+            content='Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones.'
+        />
+        <meta name="twitter:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
     <Provider store={(store)}>
   <Router>
     <Routes>
@@ -27,6 +52,7 @@ function App() {
     </Routes>
   </Router>
   </Provider>
+    </HelmetProvider>
   );
 }
 

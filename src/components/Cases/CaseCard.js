@@ -16,7 +16,7 @@ function CaseCard({ data, index }) {
       <div className="flex-shrink-0 relative overflow-hidden">
         <img
           id={data.id}
-          className={`w-full h-full transform transition-transform duration-300 ${
+          className={`w-full h-full transform transition-transform duration-100 ${
             isHovered ? 'scale-110' : 'scale-100'
           }`}
           src={data.imageUrl}
@@ -34,7 +34,7 @@ function CaseCard({ data, index }) {
             <p
               id={index}
               className={`lg:text-4xl pt-4 pb-6 text-2xl font-semibold transition duration-400 ease-in-out ${
-                isHovered ? 'text-blue-900' : 'text-gray-900'
+                isHovered ? 'text-blue-700' : 'text-gray-900'
               }`}
             >
               {data.title}
