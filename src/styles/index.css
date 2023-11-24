@@ -5,6 +5,7 @@
 .active{
     @apply border-blue-800
 }
+
 .rec.rec-arrow {
     background-color: #0B1014;
     color: #eeeeee;
@@ -16,6 +17,7 @@
     
     .rec.rec-arrow:disabled {
       visibility: hidden;
+      transition: transform 0.3s ease-out;
       }
       
     .rec-carousel-item:focus {
