@@ -73,8 +73,8 @@ function Navbar(){
                     <Link to='/' className="ml-4 mt-2">
                     <img
                         src={AppCraft}
-                        width={160}
-                        height={160}
+                        width={120}
+                        height={120}
                         className=""
                     />
                     </Link>
