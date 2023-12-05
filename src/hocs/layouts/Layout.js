@@ -1,10 +1,18 @@
+
+
 import { connect } from "react-redux"
+import {motion} from 'framer-motion'
 
 function Layout({children}){
     return(
-        <div>
+        <motion.div
+        initial={{opacity: 0, transition: {duration: 0.5}}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0, transition: {duration: 0.5}}}
+        >
+            
             {children}
-        </div>
+        </motion.div>
     )
 }
 
@@ -12,6 +20,6 @@ const mapStateToProps = state =>({
 
 })
 
-export default connect (mapStateToProps, {
+export default connect(mapStateToProps,{
 
-})(Layout)
+}) (Layout)
